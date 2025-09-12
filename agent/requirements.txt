@@ -1,0 +1,5 @@
+fastapi
+uvicorn[standard]
+httpx
+python-telegram-bot==21.4
+pydantic
