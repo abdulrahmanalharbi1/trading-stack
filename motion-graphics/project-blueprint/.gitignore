@@ -1,0 +1,12 @@
+assets/
+frames/
+probe/
+*.wav
+*.mp3
+*.mp4
+*.jpg
+*.png
+index.html
+project-blueprint.html
+cues.json
+*.log

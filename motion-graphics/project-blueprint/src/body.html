@@ -1,0 +1,60 @@
+<main class="page" dir="rtl" lang="ar">
+  <header class="top">
+    <div>
+      <p class="eyebrow">موشن قرافيك تعليمي · إدارة المشاريع</p>
+      <h1>مخطط المشروع</h1>
+      <p class="lede">رحلة كاملة من الفكرة إلى التسليم في عشر لوحات: تعريف المشروع وقيوده، ودورة حياته، ثم كل مرحلة بأدواتها الحقيقية، من ميثاق المشروع إلى المسار الحرج والقيمة المكتسبة.</p>
+    </div>
+    <dl class="specs">
+      <div><dt>المدة</dt><dd>٢:٣٠</dd></div>
+      <div><dt>اللوحات</dt><dd>١٠</dd></div>
+      <div><dt>الصوت</dt><dd>موسيقى ومؤثرات</dd></div>
+    </dl>
+  </header>
+
+  <section class="player" id="player" aria-label="مشغّل العرض">
+    <div class="viewport" id="viewport">
+      <div id="stage" aria-hidden="true">
+        <div id="grid"></div>
+        <div id="world"><div id="shared" class="layer"></div></div>
+        <div id="sweep"></div>
+        <div id="vig"></div>
+        <div id="chrome">
+          <div id="prog"></div>
+          <i class="crop" style="top:28px;right:28px;border-top-width:1.5px;border-right-width:1.5px"></i>
+          <i class="crop" style="top:28px;left:28px;border-top-width:1.5px;border-left-width:1.5px"></i>
+          <i class="crop" style="bottom:28px;right:28px;border-bottom-width:1.5px;border-right-width:1.5px"></i>
+          <i class="crop" style="bottom:28px;left:28px;border-bottom-width:1.5px;border-left-width:1.5px"></i>
+          <div id="trk"></div>
+          <div id="tblock">
+            <div class="r"><span>المشروع</span><b>متجر إلكتروني</b></div>
+            <div class="r"><span>اللوحة</span><b id="tbSheet">—</b></div>
+            <div class="r"><span>القسم</span><b id="tbSec">الغلاف</b></div>
+          </div>
+          <div id="tc">00:00:00</div>
+        </div>
+        <div id="caps"></div>
+        <div id="grain"></div>
+        <div id="fade"></div>
+      </div>
+      <button class="bigplay" id="bigplay" type="button">
+        <span class="pb"><svg viewBox="0 0 24 24" width="34" height="34" aria-hidden="true"><path d="M8 5.5v13l10-6.5z" fill="#FFB547"/></svg></span>
+        <span class="pl">شاهد العرض · دقيقتان ونصف مع الصوت</span>
+      </button>
+    </div>
+    <div class="controls">
+      <button class="ctl" id="playBtn" type="button" aria-label="تشغيل"></button>
+      <span class="time" id="timeLbl">0:00 / 2:30</span>
+      <div class="scrub"><div class="ticks" id="ticks"></div><input type="range" id="scrub" min="0" max="150" step="0.01" value="0" aria-label="موضع العرض"></div>
+      <button class="ctl" id="muteBtn" type="button" aria-label="كتم الصوت"></button>
+      <button class="ctl" id="fsBtn" type="button" aria-label="ملء الشاشة"></button>
+    </div>
+  </section>
+
+  <section class="chapters" aria-labelledby="chh">
+    <h2 id="chh">اللوحات</h2>
+    <ol id="chList"></ol>
+  </section>
+  <p class="note">اضغط <kbd>Space</kbd> للتشغيل والإيقاف، و<kbd>M</kbd> لكتم الصوت، و<kbd>F</kbd> لملء الشاشة. اختر أي لوحة للانتقال إليها مباشرة.</p>
+  <audio id="snd" preload="auto" src="__AUDIO_SRC__"></audio>
+</main>
